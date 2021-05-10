@@ -19,10 +19,10 @@ public class Demo03 {
         //2把set转换成其他集合
         ArrayList<String>alistkeys=new ArrayList<>(keys);
         System.out.println(alistkeys);
-        //3
+        //3 取出map的值 values()
         Collection<String> v=map.values();
         System.out.println(v);
-        //4
+        //4把值转换成其他的集合   new LinkedList<>(v);
         LinkedList<String>llistv=new LinkedList<>(v);
         System.out.println(llistv);
     }
