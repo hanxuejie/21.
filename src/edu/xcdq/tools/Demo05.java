@@ -27,5 +27,18 @@ public class Demo05 {
         //3 混洗
         Collections.shuffle(nums);
         System.out.println(nums);
+        //4 求最大最小值
+        System.out.println(Collections.max(nums));
+        System.out.println(Collections.min(nums));
+        // 5 替换
+        Collections.replaceAll(nums,0,100);
+        System.out.println(nums);
+        //6 求频率
+        System.out.println(Collections.frequency(nums,100));
+        //7 二分搜索，使用的条件是集合是有序的
+        Collections.sort(nums);
+        System.out.println(nums);
+        int i = Collections.binarySearch(nums,3);
+        System.out.println("位置"+i);
     }
 }
